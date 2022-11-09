@@ -11,6 +11,14 @@
     box-sizing: border-box;
 }
 
+.material-icons {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 48
+}
+
 .container {
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -30,12 +38,30 @@
 
 .logo {
     font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.logo .material-icons {
+    font-size: 45px;
+    margin-right: 5px;
+}
+
+li .material-icons {
+    font-size: 30px;
+    margin-right: 20px;
 }
 
 ul {
     list-style-type: none;
     line-height: 2.0;
 }
+
+li {
+    display: flex;
+    align-items: center;
+}
+
 
 /* Header */
 .header {
@@ -44,10 +70,27 @@ ul {
 
 .header .top-row {
     display: grid;
-    grid-template-columns: 1fr max-content;
+    grid-template-columns: 1fr min-content min-content max-content;
     align-items: center;
-    padding: 30px 45px;
+    grid-gap: 20px;
     height: 36px;
+    margin: 30px;
+}
+
+.top-row .search-bar {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    grid-gap: 5px;
+}
+
+.top-row button {
+    background: none;
+    border: none;
+}
+
+button .material-icons {
+    font-size: 30px;
 }
 
 input[type=search] {
@@ -63,11 +106,27 @@ input[type=search] {
     font-weight: 700;
 }
 
+.account-information .material-symbolds-outlined {
+    font-size: 30px;
+}
+
+img {
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+}
+
 .header .bottom-row {
     display: grid;
-    grid-template-columns: 1fr repeat(3, max-content);
+    grid-template-columns: min-content 1fr repeat(3, max-content);
     padding: 0 45px 15px 45px;
     align-items: center;
+}
+
+.bottom-row img {
+    height: 60px;
+    width: 60px;
+    margin-right: 8px;
 }
 
 .greetings {
@@ -119,13 +178,19 @@ input[type=search] {
     border-left: 8px solid rgb(255, 196, 0);
     border-radius: 10px;
     box-shadow: 2px 2px 5px 1px var(--shadowcolor);
-    padding: 30px 10px;
+    padding: 30px 20px 30px 10px;
+    display: grid;
+    grid-template-rows: min-content min-content 1fr;
 }
 
 .project .title {
     font-weight: 700;
     font-size: 18px;
     padding-bottom: 5px;
+}
+
+.project .icons {
+    place-self: end right;
 }
 
 .right-section {
@@ -167,12 +232,22 @@ input[type=search] {
 .trend-box {
     background-color: white;
     display: grid;
+    grid-template-columns: min-content auto;
+    align-items: center;
     border-radius: 10px;
     box-shadow: 2px 2px 5px 1px var(--shadowcolor);
     padding: 20px;
-    grid-gap: 20px;
+    grid-gap: 2px 10px;
 }
 
+.trend p {
+    font-size: 14px;
+    color: grey;
+}
+
+.trend .title {
+    color: black;
+}
 
 
 

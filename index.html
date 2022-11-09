@@ -8,39 +8,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="logo">Dashboard</div>
+            <div class="logo"><i class="material-icons">dashboard</i>Dashboard</div>
             <div class="navigation">
                 <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
+                    <li><i class="material-icons">home</i>Home</li>
+                    <li><i class="material-icons">account_circle</i>Profile</li>
+                    <li><i class="material-icons">chat</i>Messages</li>
+                    <li><i class="material-icons">history</i>History</li>
+                    <li><i class="material-icons">task</i>Tasks</li>
+                    <li><i class="material-icons">forum</i>Communities</li>
                 </ul>
             </div>
             <div class="navigation">
                 <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
+                    <li><i class="material-icons">settings</i>Settings</li>
+                    <li><i class="material-icons">help_center</i>Support</li>
+                    <li><i class="material-icons">verified_user</i>Privacy</li>
                 </ul>
             </div>
         </div>
         <div class="header">
             <div class="top-row">
-                <form action="" method="get">
-                    <button type="submit">Search</button>
+                <form action="" method="get" class="search-bar">
+                    <button type="submit"><i class="material-icons">search</i></button>
                     <input type="search" name="searchbar" id="searchbar">
                 </form>
-                <div class="account-information">Morgan Oakley</div>
+                <span class="material-symbols-outlined">notifications</span>
+                <img src="./img/Lake_bled.jpeg" alt="Profile Picture: Lake Bled">
+                <span class="account-information">Morgan Oakley</span>
             </div>
             <div class="bottom-row">
+                <img src="./img/Lake_bled.jpeg" alt="Profile Picture: Lake Bled">
                 <div class="greetings">Hi there,<p>Morgan Okaley (@morgan)</p></div>
                 <div class="buttons">
                     <button>New</button>
@@ -55,26 +60,56 @@
                 <div class="project">
                     <p class="title">Super Cool Project</p>
                     <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                    <div class="icons">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">visibility</span>
+                        <span class="material-symbols-outlined">fork_right</span>
+                    </div>
                 </div>
                 <div class="project">
                     <p class="title">Super Cool Project</p>
                     <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                    <div class="icons">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">visibility</span>
+                        <span class="material-symbols-outlined">fork_right</span>
+                    </div>
                 </div>
                 <div class="project">
                     <p class="title">Super Cool Project</p>
                     <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                    <div class="icons">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">visibility</span>
+                        <span class="material-symbols-outlined">fork_right</span>
+                    </div>
                 </div>
                 <div class="project">
                     <p class="title">Super Cool Project</p>
                     <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                    <div class="icons">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">visibility</span>
+                        <span class="material-symbols-outlined">fork_right</span>
+                    </div>
                 </div>
                 <div class="project">
                     <p class="title">Super Cool Project</p>
                     <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                    <div class="icons">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">visibility</span>
+                        <span class="material-symbols-outlined">fork_right</span>
+                    </div>
                 </div>
                 <div class="project">
                     <p class="title">Super Cool Project</p>
                     <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                    <div class="icons">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="material-symbols-outlined">visibility</span>
+                        <span class="material-symbols-outlined">fork_right</span>
+                    </div>
                 </div>
             </div>
             <div class="right-section">
@@ -98,25 +133,25 @@
                 <div class="trend-section">
                     <p class="section-header">Trending</p>
                     <div class="trend-box">
+                        <img src="./img/NewYork.JPG" alt="Profile Picture: New York">
                         <div class="trend">
                             <p class="title">@tegan</p>
                             <p>World Peace Builder</p>
                         </div>
+                        <img src="./img/Lake_bled.jpeg" alt="Profile Picture">
                         <div class="trend">
-                            <p class="title">@tegan</p>
-                            <p>World Peace Builder</p>
+                            <p class="title">@morgan</p>
+                            <p>Super Cool Project</p>
                         </div>
+                        <img src="./img/Westkapelle.JPG" alt="Profile Picture: Westkapelle">
                         <div class="trend">
-                            <p class="title">@tegan</p>
-                            <p>World Peace Builder</p>
+                            <p class="title">@kendall</p>
+                            <p>Life Changing App</p>
                         </div>
+                        <img src="./img/USA.JPG" alt="Profile Picture: Random USA">
                         <div class="trend">
-                            <p class="title">@tegan</p>
-                            <p>World Peace Builder</p>
-                        </div>
-                        <div class="trend">
-                            <p class="title">@tegan</p>
-                            <p>World Peace Builder</p>
+                            <p class="title">@alex</p>
+                            <p>No Traffic Maker</p>
                         </div>
                     </div>
                 </div>
